@@ -10,6 +10,7 @@ terraform {
 # Configure the AWS Provider
 provider "aws" {
   region = "us-east-1"
+  profile = "default"
 }
 
 #If you want use ec2 that created without terraform you need import 
