@@ -11,7 +11,7 @@ mkdir terraform_worksapce
 After that we need create file with name `main.tf`.
 the ending `.tf` symbolizes that is a terraform file.
 
-in Linux
+- in Linux
 ```bash
 touch main.tf
 ```
@@ -19,7 +19,7 @@ touch main.tf
 
 Now we need to import the AWS provider. 
 Let's open the `main.tf` and enter this code to import:
-```bash
+```terraform
 terraform {
   required_providers {
     aws = {
@@ -35,7 +35,12 @@ provider "aws" {
   profile = "default"
 }
 ```
-In this code we will import the provider and set some settings like region, profile and more..
+In this code we will import the provider and set some settings like version,region, profile and more...
+
+Now we need to inilize terraform.
+````commandline
+terraform init
+````
 
 
 
