@@ -8,14 +8,14 @@ Firts we need to create folder that will be our workspace
 ```bash
 mkdir terraform_worksapce
 ```
-After that we need create file with name `main.tf`.
+After that we need to create file with name `main.tf`.
 the ending `.tf` symbolizes that is a terraform file.
 
 - in Linux
 ```bash
 touch main.tf
 ```
-- In Windows you can be created via Vscode or Pycharm to more convenience.
+- In Windows you can create via Vscode or Pycharm to more convenience.
 
 Now we need to import the AWS provider. 
 Let's open the `main.tf` and enter this code to import:
@@ -35,13 +35,14 @@ provider "aws" {
   profile = "default"
 }
 ```
-In this code we will import the provider and set some settings like version,region, profile and more...
+In this code we will import the provider and set some settings like version,region, profile etc...
 
-Now we need to inilize terraform.
+Now we need to initialize terraform.
 ````commandline
 terraform init
 ````
 The command `terraform init` create new file with name `.terraform.lock.hcl` that owns our version.
+
 Example to `.terraform.lock.hcl` file:
 ```terraform
 # This file is maintained automatically by "terraform init".
@@ -73,6 +74,6 @@ provider "registry.terraform.io/hashicorp/aws" {
 If we want to change the version of the provider we need to set new version in the `main.tf` and execute the command `terrform init -upgrade`.
 
 
-After we import the provider, now we can do some things in the AWS cloude.
+After we import the provider, now we can do things in AWS cloud.
 
 
