@@ -70,7 +70,7 @@ provider "registry.terraform.io/hashicorp/aws" {
   ]
 }
 ```
-If we want to change the version of the provider we need to set new version in the `main.tf` and execute the command `terrform init -upgrade`
+If we want to change the version of the provider we need to set new version in the `main.tf` and execute the command `terrform init -upgrade`.
 
 
 After we import the provider, now we can do some things in the AWS cloude.
