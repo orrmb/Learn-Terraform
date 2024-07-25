@@ -6,7 +6,7 @@ if not install now:
 [InstallTerraform](https://developer.hashicorp.com/terraform/install)
 
 We learn use Terraform with AWS provider.
-Firts we need to create folder that will be our workspace
+First we need to create folder that will be our workspace
 
 - In Linux & Windows
 ```bash
